@@ -1,0 +1,396 @@
+/*Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF
+Navigation Text: #2B2F26
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343*/
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  margin: 0;
+  font-family: 'Merriweather';
+  background-color: #F2F1E8;
+  color: #131511;
+  box-sizing: border-box;
+}
+
+a {
+  color: #968772;
+}
+
+a:hover {
+  color: #967343;
+}
+
+*:hover, *:focus {
+  transition: 1s;
+}
+
+/* SITE HEADER STYLING */
+
+#main_navigation {
+  background-color: #FFF;
+  border-bottom: 1px solid lightgrey;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 3px 0;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-shadow: 2px 2px 5px #888;
+}
+
+#logo {
+  width: 30px;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+#main_navigation ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 20px;
+}
+
+#main_navigation a {
+  color: #2B2F26
+}
+
+#main_navigation a:hover {
+  color: #CD5D67;
+}
+
+#main_navigation a:active {
+  color: #968772;
+}
+
+/* MAIN PAGE BODY CONTENT */
+
+.wrapper {
+  margin: 0 2%;
+  background-color: #F2F1E8;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 70px;
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+
+h2 {
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.productGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  margin-right: 12px;
+}
+
+.container:nth-child(3), .container:last-child {
+  margin-right: 0;
+}
+
+.image_row1 {
+  height: 250px;
+  background-position: center;
+}
+
+.image_row2 {
+  height: 150px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  background-position: center;
+}
+
+#product1 {
+  width: 59%;
+  background-image: url('images/product-1.jpg');
+  background-size: cover;
+}
+
+#product2 {
+  width: 19%;
+  background-image: url('images/product-2.jpg');
+  background-size: cover;
+}
+
+#product3 {
+  width: 19%;
+  background-image: url('images/product-3.jpg');
+  background-size: cover;
+}
+
+#product4 {
+  width: 19%;
+  background-image: url('images/product-4.jpg');
+  background-size: cover;
+}
+
+#product5 {
+  width: 19%;
+  background-image: url('images/product-5.jpg');
+  background-size: cover;
+}
+
+#product6 {
+  width: 39%;
+  background-image: url('images/product-6.jpg');
+  background-size: cover;
+}
+
+#product7 {
+  width: 19%;
+  background-image: url('images/product-7.jpg');
+  background-size: cover;
+}
+
+.bottomLeft {
+  display: inline;
+  font-size: 12px;
+  color: rgb(245,239,219);
+  background-color: rgb(43,47,38);
+  padding: 6px 6px;
+}
+
+.image_row1 .bottomLeft {
+  position: relative;
+  top: 200px;
+}
+
+.image_row2 .bottomLeft {
+  position: relative;
+  top: 100px;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  background-color: rgb(43,47,38);
+  color: rgb(216,228,231);
+  padding: 16px 16px;
+  font-size: .75em;
+  /*position: absolute;
+  bottom: 0px;
+  width: 100%;*/
+}
+
+
+/*===================================================================================
+ABOUT PAGE STYLING
+===================================================================================*/
+
+#top_section h3, #bottom_section h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#top_section p, #bottom_section p {
+  font-size: 14px;
+}
+
+/* Top Section Styles */
+
+#top_section {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#top_section h1 {
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+#top_section img {
+  width: 125px;
+  float: left;
+  margin-right: 16px;
+}
+
+#top_section p, blockquote {
+  line-height: 32px;
+}
+
+#top_section blockquote {
+  border-left: 2px solid grey;
+  color: grey;
+  font-style: italic;
+  font-size: 14px;
+  padding-left: 20px;
+  margin: 20px 0 40px;
+}
+
+/* Image Divider */
+
+#image_divider {
+  background: url('images/background-3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+
+#image_divider h1 {
+  color: white;
+  text-align: center;
+  padding: 75px 0;
+}
+
+/* Bottom Section Styles */
+
+#bottom_section {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.fac_content {
+  margin-bottom: 30px;
+}
+
+#bottom_section p {
+  line-height: 32px;
+  width: 75%;
+  float: left;
+  margin-right: 20px;
+  margin-top: 0;
+}
+
+#bottom_section aside {
+  width: 20%;
+  float: right;
+}
+
+#bottom_section aside img {
+  width: 100%;
+}
+
+#bottom_section figcaption {
+  color: grey;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+
+/* Table Styling */
+
+#bottom_section table, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+#bottom_section td {
+  padding: 10px 10px;
+}
+
+#bottom_section thead td {
+  text-align: center;
+}
+
+#bottom_section tbody tr:nth-child(odd) {
+  background-color: rgb(242,234,220);
+}
+
+#bottom_section table {
+  margin-bottom: 50px;
+}
+
+/*===================================================================================
+NEWSLETTER PAGE STYLING
+===================================================================================*/
+
+#newsletter_container {
+  background: url('images/background-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form_container{
+  width: 50%;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 2px 2px 5px #888;
+}
+
+#form_container h1 {
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+#form_container h2 {
+  font-size: 18px;
+}
+
+form input {
+  border: none;
+  background-color: transparent;
+}
+
+.newsletter_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#nameInput, #emailInput {
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #968772;
+  color: #968772;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+#nameInput:focus, #emailInput:focus {
+  border-bottom: 2px solid #967343;
+}
+
+#signupButton {
+  padding: 20px;
+  background-color: #968772;
+  color: #F2F1E8;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+#signupButton:hover {
+  background-color: #967343;
+  color: #FFFFFF;
+}
